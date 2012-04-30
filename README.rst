@@ -1,4 +1,4 @@
-IPython_qt plugin for NINJA-IDE
+IPython Plugin for NINJA-IDE
 ===============================
 
 Version:
