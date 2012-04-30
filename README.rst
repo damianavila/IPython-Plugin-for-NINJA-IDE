@@ -24,9 +24,10 @@ PyQT 4.9 (the plugin is not working with PyQt 4.8 because qwebkit module do not 
 Usage
 *****
 In a terminal type:
+$ ninja-ide & ipython notebook --no-browser
 
-
-License:
+MIT License:
+************
 
 Copyright (c) 2012 Damián Avila
 
