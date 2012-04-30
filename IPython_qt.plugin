@@ -1,0 +1,7 @@
+{
+  "url": "http://www.oquanta.info",
+  "version": "0.15",
+  "class": "my_IPython_qt",
+  "module": "IPython_qt",
+  "authors": "Damian Avila, 2012"
+}

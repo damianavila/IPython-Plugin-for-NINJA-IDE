@@ -1,0 +1,7 @@
+{
+  "venv": "", 
+  "project-type": "NINJA-Plugin-Project",
+  "name": "IPython_qt", 
+  "license": "MIT License", 
+  "description": "IPython qt console for NINJA-IDE"
+}
