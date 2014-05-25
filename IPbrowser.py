@@ -7,12 +7,18 @@ from PyQt4 import QtGui, QtCore, QtWebKit
 class MainWindow(QtGui.QMainWindow):
     def __init__(self):
         QtGui.QMainWindow.__init__(self)
-        self.tabs = QtGui.QTabWidget(self)
+        self.tabs = QtGui.QTabWidget(self,
+                                     tabsClosable=True,
+                                     tabCloseRequested=self.closeTabRequested)
         self.setCentralWidget(self.tabs)
 
     def addTab(self, url=QtCore.QUrl("")):
         self.tabs.setCurrentIndex(self.tabs.addTab(Tab(url, self), ""))
         return self.tabs.currentWidget()
+
+    def closeTabRequested(self, idx):
+        if idx != 0:
+            self.tabs.widget(idx).deleteLater()
 
 
 class Tab(QtWebKit.QWebView):
