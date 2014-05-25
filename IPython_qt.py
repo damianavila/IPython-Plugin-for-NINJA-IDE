@@ -13,11 +13,10 @@ class my_IPython_qt(plugin.Plugin):
         web = MainWindow()
         web.addTab(QtCore.QUrl('http://127.0.0.1:8888/'))
         web.show()
-        icon_path = QtCore.QDir.homePath() + \
-            "/.ninja_ide/addins/plugins/IPython_qt/ipynblogo.png"
+        icon_path = QtCore.QDir.homePath() + "/.ninja_ide/addins/plugins/ipynblogo.png"
         description = "IPython embedded into NINJA-IDE"
         #add the widget to NINJA-IDE
         misc_service.add_widget(web, icon_path, description)
 
     def finish(self):
-        print "The plugin is shutting down cause the user has closed NINJA-IDE"
+        print("The plugin is shutting down cause the user has closed NINJA-IDE")

@@ -17,14 +17,18 @@ Now, I have a version (this one, 0.15) ready to release to the public, so here i
 
 Requirements
 ************
-NINJA-IDE > 2.0
-IPython > 0.12
-PyQT 4.9 (the plugin is not working with PyQt 4.8 because qwebkit module do not support the correct web socket protocol.
+NINJA-IDE >= 2.0
+IPython >= 1.0
+PyQT >= 4.9 (the plugin is not working with PyQt 4.8 because qwebkit module do not support the correct web socket protocol.
 
 Usage
 *****
 In a terminal type:
-$ ninja-ide & ipython notebook --no-browser
+$ ipython notebook --no-browser
+
+in any directory you want, remember you will be able to navigate down from that directory.
+
+Then starts NINJA-ide 
 
 MIT License:
 ************
